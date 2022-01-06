@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  chrome:
+    build: .
+    container_name: chrome
+    user: apps
+    privileged: true
+    environment:
+      - VNC_SERVER_PASSWORD=102030
+    ports:
+      - 5900:5900
+    restart: always
