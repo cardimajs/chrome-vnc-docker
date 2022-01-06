@@ -1,1 +1,1 @@
-docker build -t local/chrome:0.0.1 .
+docker build -t local/chrome:0.0.1 . --no-cache
